@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Roboto:ital,wght@0,700;1,400&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  min-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  min-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.apple_photo {
+  width: 90%;
+}
+
+.apple {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-width: 49.4vw;
+  margin-top: 5rem;
+}
+
+.samsung {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-width: 85vw;
+  margin-top: 5rem;
+}
+
+.button {
+  position: absolute;
+  top: 30%;
+  border: 5px white solid;
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+  font-size: 1.75rem;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 5px black solid;
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+.active {
+  transform: translateX(0rem);
+  transition: all 3s ease-in-out;
+  z-index: 9999;
+  min-width: 80vw;
+}
+
+.active-samsung {
+  transform: translateX(-25rem);
+  transition: all 3s ease-in-out;
+  z-index: 999;
+  min-width: 95vw;
+}
