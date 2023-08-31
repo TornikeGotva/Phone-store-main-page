@@ -21,9 +21,9 @@ body {
 .left-side {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: pink;
+  background-image: url(imgs/Apple.webp);
   min-width: 50%;
   position: relative;
   overflow: hidden;
@@ -34,14 +34,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: lightblue;
+  background-image: url(imgs/Samsung.webp);
   min-width: 50%;
   position: relative;
   overflow: hidden;
-}
-
-.apple_photo {
-  width: 90%;
 }
 
 .apple {
@@ -51,7 +47,7 @@ body {
   font-size: 5rem;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
-  min-width: 49.4vw;
+  min-width: 50vw;
   margin-top: 5rem;
 }
 
@@ -62,13 +58,13 @@ body {
   font-size: 5rem;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
-  min-width: 85vw;
+  min-width: 60vw;
   margin-top: 5rem;
 }
 
 .button {
   position: absolute;
-  top: 30%;
+  top: 40%;
   border: 5px white solid;
   padding: 1.5rem 3.5rem 1.5rem 3.5rem;
   font-size: 1.75rem;
@@ -85,15 +81,12 @@ body {
 }
 
 .active {
-  transform: translateX(0rem);
-  transition: all 3s ease-in-out;
-  z-index: 9999;
-  min-width: 80vw;
+  transition: 3s ease-in-out;
+  min-width: 85vw;
 }
 
 .active-samsung {
   transform: translateX(-25rem);
-  transition: all 3s ease-in-out;
-  z-index: 999;
+  transition: 3s ease-in-out;
   min-width: 95vw;
 }

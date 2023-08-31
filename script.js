@@ -6,7 +6,7 @@ const samsungHeader = document.querySelector(".samsung");
 const appleHeader = document.querySelector(".apple");
 
 function innit() {
-  samsungHeader.style.minWidth = "49.3vw";
+  samsungHeader.style.minWidth = "50vw";
 }
 
 innit();
@@ -18,7 +18,7 @@ leftSide.addEventListener("mouseenter", function () {
 
 leftSide.addEventListener("mouseleave", function () {
   leftSide.classList.remove("active");
-  appleHeader.style.minWidth = "49.4vw";
+  appleHeader.style.minWidth = "50vw";
 });
 
 rightSide.addEventListener("mouseenter", function () {
@@ -28,5 +28,5 @@ rightSide.addEventListener("mouseenter", function () {
 
 rightSide.addEventListener("mouseleave", function () {
   rightSide.classList.remove("active-samsung");
-  samsungHeader.style.minWidth = "49.3vw";
+  samsungHeader.style.minWidth = "50vw";
 });
