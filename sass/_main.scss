@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Roboto:ital,wght@0,700;1,400&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(imgs/Apple.webp);
+  min-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(imgs/Samsung.webp);
+  min-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.apple {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-width: 50vw;
+  margin-top: 5rem;
+}
+
+.samsung {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-width: 60vw;
+  margin-top: 5rem;
+}
+
+.button {
+  position: absolute;
+  top: 40%;
+  border: 5px white solid;
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+  font-size: 1.75rem;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 5px black solid;
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+.active {
+  transition: 3s ease-in-out;
+  min-width: 85vw;
+}
+
+.active-samsung {
+  transform: translateX(-25rem);
+  transition: 3s ease-in-out;
+  min-width: 95vw;
+}
+
+.samsung-section_main {
+  padding: 3rem;
+
+  &_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 52rem;
+    overflow: hidden;
+    transition: 0.4s ease-in;
+    margin-left: 15rem;
+
+    &_box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 99999;
+    }
+
+    &_img {
+      transition: all 0.4s ease-in;
+    }
+
+    &_header {
+      position: absolute;
+      font-size: 2.5rem;
+      color: #fff;
+      letter-spacing: 2px;
+      left: 145%;
+      top: -1%;
+      padding: 0.5rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      min-width: 15vw;
+    }
+
+    &_p {
+      position: absolute;
+      font-size: 1.5rem;
+      color: #fff;
+      padding-top: 1.25rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      min-width: 62vw;
+      min-height: 30vh;
+      top: 60%;
+      left: 125%;
+      padding: 2rem;
+      text-transform: capitalize;
+    }
+  }
+}

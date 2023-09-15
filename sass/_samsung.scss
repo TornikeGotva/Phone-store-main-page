@@ -1,0 +1,13 @@
+.samsung-section {
+  display: grid;
+  grid-template-rows: 7rem 140rem 5rem;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.apple-section {
+  display: grid;
+  grid-template-rows: 6rem 140rem 5rem;
+  background: #fff;
+  min-height: 100vh;
+}

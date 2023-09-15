@@ -1,0 +1,77 @@
+.samsung-section_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: relative;
+
+  &_list {
+    display: flex;
+    gap: 3rem;
+    color: #fff;
+    & a {
+      border: 1px #fff solid;
+      padding: 0.5rem;
+      font-size: 1.25rem;
+
+      &:hover {
+        background-color: #fff;
+        color: black;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    background-color: #fff;
+    top: 72%;
+    left: 63.5%;
+    z-index: 999999;
+    overflow-y: scroll;
+    border: 1px solid #000;
+
+    &_box {
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem;
+      justify-content: space-between;
+      gap: 2rem;
+      border: 1px solid #000;
+      width: 20rem;
+
+      &_header {
+        font-size: 1rem;
+      }
+
+      &_price {
+        font-size: 1rem;
+      }
+
+      &_img {
+        height: 6rem;
+        padding-bottom: 2rem;
+      }
+
+      &_remove {
+        position: absolute;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.25rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        top: 10%;
+        left: 1%;
+      }
+    }
+  }
+}
