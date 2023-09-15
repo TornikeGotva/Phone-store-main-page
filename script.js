@@ -5,12 +5,6 @@ const rightSide = document.querySelector(".right-side");
 const samsungHeader = document.querySelector(".samsung");
 const appleHeader = document.querySelector(".apple");
 
-function innit() {
-  samsungHeader.style.minWidth = "50vw";
-}
-
-innit();
-
 leftSide.addEventListener("mouseenter", function () {
   leftSide.classList.add("active");
   appleHeader.style.minWidth = "95vw";
